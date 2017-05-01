@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">JrDevStory</string>
+
+    <string name="page0">Alright %1$s, you&apos;ve got a couple projects you feel good about and you&apos;re ready to start your career as a Web Developer!
+You find a coffeeshop, get out your laptop (complete with sweet JavaScript &amp; GitHub stickers), and start the job hunt!</string>
+    <string name="page0_choice1">Log onto Indeed.com and send out some applications.</string>
+    <string name="page0_choice2">Message people you$apos;ve met at meetups and tech events.  Let them know you're looking for a gig.</string>
+
+    <string name="page1">You triple check your resume for typos and fire off some applications.
+A  couple days later you hear back.
+Which option do you follow up with?</string>
+    <string name="page1_choice1">MegaTech, inc</string>
+    <string name="page1_choice2">TeenyStartup.io</string>
+
+
+    <string name="page2">You send out a few messages and manage not to sound too desperate.
+A  couple days later you hear you get some referrals.
+Which option do you follow up with?</string>
+    <string name="page2_choice1">TeenyStartup.io</string>
+    <string name="page2_choice2">A freelance project</string>
+
+
+
+    <string name="page3">The founder of TeenyStartup.io messages you on Twitter.  Eventually you manage to decipher his emojis and after a bit of back and forth, you set up an interview.
+How do you prepare?</string>
+    <string name="page3_choice1">Study up on Design Patterns, Data Structures, and Algorithms</string>
+    <string name="page3_choice2">Tag the founder in some 🔥🔥🔥 programmer memes on Insta and Twitter</string>
+
+
+
+    <string name="page4">You complete a phone screen, a take home coding test, a cognitive test, a personality test, a rental history form, a work history form, and provide 17 character references.
+You hear nothing from the recruiter for 2 weeks.
+How do you proceed?</string>
+    <string name="page4_choice1">Wait another 2 weeks,  then reach out</string>
+    <string name="page4_choice2">It&apos;s been long enough, send a follow up email immediately</string>
+
+
+
+    <string name="page3_lose">The founder snapchats you while using the dog filter...turns out you&apos;re not a good culture fit.</string>
+
+    <string name="page4_lose">The recruiter tells you that the position has been filled.
+They also asked why you didn&apos;t return their calls...turns out they got you mixed up someone else named %1$s.</string>
+
+    <string name="page5_lose">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client.
+They roast your "dev work" in a tweet-storm that goes viral.
+Your fledgling career does not recover.</string>
+
+
+
+    <string name="page3_win">You crush the interview.  Your memes are 💪. your puns strike like ⚡.  You sprinkle in some 🐝buzzwords like saltbae sprinkles salt.
+They love you.
+You never discuss the tech stack, or your job role, but who cares?
+You&apos;re offered the job on the spot!</string>
+
+    <string name="page4_win">The recruiter tells you that you&apos;re hired.
+They tried to tell you a week ago, but apparently the email bounced back to them.</string>
+
+    <string name="page5_win">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client.
+They praise your work and hold you up as an example for new freelancers to follow.
+You get several inquiries from new clients, are able to raise your rates, and can finally afford to rent a WeWerk office space.</string>
+
+    <string name="win">You&apos;re hired!  You code happily ever after, and git commit off into the sunset.</string>
+
 </resources>

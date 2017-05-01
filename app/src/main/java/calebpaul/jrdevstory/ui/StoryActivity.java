@@ -1,8 +1,10 @@
-package calebpaul.jrdevstory;
+package calebpaul.jrdevstory.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import calebpaul.jrdevstory.R;
 
 public class StoryActivity extends AppCompatActivity {
 
