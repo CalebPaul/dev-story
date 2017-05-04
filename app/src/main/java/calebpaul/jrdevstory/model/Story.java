@@ -3,12 +3,13 @@ package calebpaul.jrdevstory.model;
 import calebpaul.jrdevstory.R;
 
 public class Story {
+    public final static String TAG = Story.class.getSimpleName();
     private Page[] pages;
 
     public Story() {
-        pages = new Page[11];
+        pages = new Page[12];
 
-        pages[0] = new Page(R.drawable.main,
+        pages[0] = new Page(R.drawable.jobhunt,
                 R.string.page0,
                 new Choice(R.string.page0_choice1, 1),
                 new Choice(R.string.page0_choice2, 2)
@@ -58,5 +59,12 @@ public class Story {
 
         pages[11] = new Page(R.drawable.main, R.string.page5_win);
 
+    }
+
+    public Page getPage(int pageNumber) {
+        if (pageNumber >= pages.length) {
+            pageNumber = 0;
+        }
+        return pages[pageNumber];
     }
 }
