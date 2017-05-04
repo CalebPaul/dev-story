@@ -1,9 +1,5 @@
 package calebpaul.jrdevstory.model;
 
-/**
- * Created by calebpaul on 4/28/17.
- */
-
 public class Page {
     private int ImgId;
     private int TextId;

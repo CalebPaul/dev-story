@@ -5,10 +5,6 @@ import android.app.Application;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
-/**
- * Created by calebpaul on 5/1/17.
- */
-
 public class InteractiveStoryApplication extends Application {
 
     @Override
