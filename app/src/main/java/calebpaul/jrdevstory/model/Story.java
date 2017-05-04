@@ -2,10 +2,6 @@ package calebpaul.jrdevstory.model;
 
 import calebpaul.jrdevstory.R;
 
-/**
- * Created by calebpaul on 5/1/17.
- */
-
 public class Story {
     private Page[] pages;
 
@@ -52,25 +48,15 @@ public class Story {
                 R.string.page3_lose
         );
 
-        pages[7] = new Page(R.drawable.main,
-                R.string.page4_lose
-        );
+        pages[7] = new Page(R.drawable.main, R.string.page4_lose);
 
-        pages[8] = new Page(R.drawable.main,
-                R.string.page5_lose
-        );
+        pages[8] = new Page(R.drawable.main, R.string.page5_lose);
 
-        pages[9] = new Page(R.drawable.main,
-                R.string.page3_win
-        );
+        pages[9] = new Page(R.drawable.main, R.string.page3_win);
 
-        pages[10] = new Page(R.drawable.main,
-                R.string.page4_win
-        );
+        pages[10] = new Page(R.drawable.main, R.string.page4_win);
 
-        pages[11] = new Page(R.drawable.main,
-                R.string.page5_win
-        );
+        pages[11] = new Page(R.drawable.main, R.string.page5_win);
 
     }
 }
