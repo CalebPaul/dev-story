@@ -27,11 +27,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = nameField.getText().toString();
-                Intent intent = new Intent(MainActivity.this, StoryActivity.class);
-                intent.putExtra("name", name);
-                startActivity(intent);
+                startStory(name);
             }
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        nameField.setText("");
+    }
+
+    private void startStory(String name) {
+        Intent intent = new Intent(MainActivity.this, StoryActivity.class);
+        intent.putExtra("name", name);
+        startActivity(intent);
+    }
 }
