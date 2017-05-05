@@ -46,7 +46,7 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     private void loadPage(int pageNumber) {
-        Page page = story.getPage(pageNumber);
+        final Page page = story.getPage(pageNumber);
 
         Drawable image = ContextCompat.getDrawable(this, page.getImgId());
         storyImageView.setImageDrawable(image);
@@ -55,11 +55,29 @@ public class StoryActivity extends AppCompatActivity {
         pageText = String.format(pageText, name);
         storyTextView.setText(pageText);
 
+        if (page.isEndPage()) {
+            choice1Button.setVisibility(View.INVISIBLE);
+            choice2Button.setText(R.string.play_again_button_text);
+            choice2Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+//                    finish();
+                }
+            });
+        } else {
+            loadButtons(page);
+        }
+
+    }
+
+    private void loadButtons(final Page page) {
+        choice1Button.setVisibility(View.VISIBLE);
         choice1Button.setText(page.getChoice1().getTextId());
         choice1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                int nextPage = page.getChoice1().getNextPage();
+                loadPage(nextPage);
             }
         });
 
@@ -67,7 +85,8 @@ public class StoryActivity extends AppCompatActivity {
         choice2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                int nextPage = page.getChoice2().getNextPage();
+                loadPage(nextPage);
             }
         });
     }
