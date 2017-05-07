@@ -70,6 +70,6 @@ You get several inquiries from new clients, are able to raise your rates, and ca
 
     <string name="win">You\'re hired!  You code happily ever after, and git commit off into the sunset.</string>
     <string name="story_image_content_description">Story Page Image</string>
-    <string name="play_again_button_text">Try again?</string>
+    <string name="play_again_button_text">Play Again!</string>
 
 </resources>
