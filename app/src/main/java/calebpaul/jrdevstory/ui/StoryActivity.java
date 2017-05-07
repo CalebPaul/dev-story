@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Stack;
+
 import calebpaul.jrdevstory.R;
 import calebpaul.jrdevstory.model.Page;
 import calebpaul.jrdevstory.model.Story;
@@ -24,6 +26,7 @@ public class StoryActivity extends AppCompatActivity {
     private TextView storyTextView;
     private Button choice1Button;
     private Button choice2Button;
+    private Stack<Integer> pageStack = new Stack<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,7 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     private void loadPage(int pageNumber) {
+        pageStack.push(pageNumber);
         final Page page = story.getPage(pageNumber);
 
         Drawable image = ContextCompat.getDrawable(this, page.getImgId());
@@ -61,7 +65,7 @@ public class StoryActivity extends AppCompatActivity {
             choice2Button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    finish();
+                    finish();
                 }
             });
         } else {
@@ -89,5 +93,15 @@ public class StoryActivity extends AppCompatActivity {
                 loadPage(nextPage);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        pageStack.pop();
+        if (pageStack.isEmpty()) {
+            super.onBackPressed();
+        } else {
+            loadPage(pageStack.pop());
+        }
     }
 }
