@@ -1,75 +1,69 @@
 <resources>
     <string name="app_name">JrDevStory</string>
-    <string name="enter_your_name">enter your name</string>
+    <string name="enter_your_name">Please enter your name:</string>
     <string name="start_the_job_hunt">start the job hunt!</string>
     <string name="artcredit1">Main Page artwork created by Luis Zuno (@ansimuz)</string>
 
 
+    <string name="page0">Alright %1$s!\n You\'ve got a couple projects you feel good about and you\'re ready to start your career as a Web Developer! \n You find a coffeeshop, get out your laptop (complete with sweet JavaScript and GitHub stickers), and start the job hunt!</string>
+    <string name="page0_choice1">Hit online job boards and send out some applications</string>
+    <string name="page0_choice2">Message folks you\'ve met at local tech events, let them know you\'re on the market</string>
 
-    <string name="page0">Alright %1$s, you\'ve got a couple projects you feel good about and you\'re ready to start your career as a Web Developer!
-You find a coffeeshop, get out your laptop (complete with sweet JavaScript and GitHub stickers), and start the job hunt!</string>
-    <string name="page0_choice1">Log onto Indeed.com and send out some applications.</string>
-    <string name="page0_choice2">Message people you$apos;ve met at meetups and tech events.  Let them know you\'re looking for a gig.</string>
 
     <string name="page1">You triple check your resume for typos and fire off some applications.
-A  couple days later you hear back.
+A  couple days later you hear back.\n
 Which option do you follow up with?</string>
     <string name="page1_choice1">MegaTech, inc</string>
     <string name="page1_choice2">TeenyStartup.io</string>
 
 
-    <string name="page2">You send out a few messages and manage not to sound too desperate.
+    <string name="page2">You send out a few messages and manage not to sound too desperate.\n
 A  couple days later you hear you get some referrals.
 Which option do you follow up with?</string>
     <string name="page2_choice1">TeenyStartup.io</string>
     <string name="page2_choice2">A freelance project</string>
 
 
-
-    <string name="page3">The founder of TeenyStartup.io messages you on Twitter.  Eventually you manage to decipher his emojis and after a bit of back and forth, you set up an interview.
+    <string name="page3">The founder of TeenyStartup.io messages you on Twitter. \nEventually you manage to decipher his emojis and after a bit of back and forth, you set up an interview.\n
 How do you prepare?</string>
     <string name="page3_choice1">Study up on Design Patterns, Data Structures, and Algorithms</string>
     <string name="page3_choice2">Tag the founder in some 🔥🔥🔥 programmer memes on Insta and Twitter</string>
 
 
-
-    <string name="page4">You complete a phone screen, a take home coding test, a cognitive test, a personality test, a rental history form, a work history form, and provide 17 character references.
-You hear nothing from the recruiter for 2 weeks.
+    <string name="page4">You complete a phone screen, a take home coding test, a cognitive test, a personality test, a rental history form, a work history form, and provide 17 character references. \n
+You hear nothing from the recruiter for 2 weeks. \n
 How do you proceed?</string>
-    <string name="page4_choice1">Wait another 2 weeks,  then reach out</string>
-    <string name="page4_choice2">It\'s been long enough, send a follow up email immediately</string>
+    <string name="page4_choice1">Wait a bit longer, then reach out</string>
+    <string name="page4_choice2">Send a polite follow up email immediately</string>
 
-    <string name="page5">Your cat\'s sister\'s owner\'s neighbor\'s aunt needs some help with her Aquatic Yoga blog and e-store project.</string>
-    <string name="page5_choice1">Build it in WordPress</string>
-    <string name="page5_choice2">Set up a Tumblr</string>
+    <string name="page5">Your cat\'s sister\'s owner\'s neighbor\'s aunt needs some help with her Aquatic Yoga blog and e-store project. \nShe doesn\'t use email and sends you specs for the project in a hand-written letter.\n What\'s your next move?</string>
+    <string name="page5_choice1">Build it in WordPress and give very detailed instructions</string>
+    <string name="page5_choice2">Set up a Tumblr, you don\'t have time for snail mail clients</string>
 
 
+    <string name="page3_lose">The founder snapchats you while using the dog filter…turns out you\'re not a good culture fit, %1$s.</string>
 
-    <string name="page3_lose">The founder snapchats you while using the dog filter...turns out you\'re not a good culture fit.</string>
+    <string name="page4_lose">The recruiter tells you that the position has been filled. \n
+They also asked why you didn\'t return their calls…turns out they got you mixed up someone else named %1$s.</string>
 
-    <string name="page4_lose">The recruiter tells you that the position has been filled.
-They also asked why you didn\'t return their calls...turns out they got you mixed up someone else named %1$s.</string>
-
-    <string name="page5_lose">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client.
+    <string name="page5_lose">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client. \n
 They roast your "dev work" in a tweet-storm that goes viral.
-Your fledgling career does not recover.</string>
+Your fledgling career does not recover, %1$s.</string>
 
 
-
-    <string name="page3_win">You crush the interview.  Your memes are 💪. your puns strike like ⚡.  You sprinkle in some 🐝buzzwords like saltbae sprinkles salt.
+    <string name="page3_win">You crush the interview, %1$s!  \n Your memes are 💪. \n Your puns strike like ⚡. \n You sprinkle in some 🐝buzzwords like saltbae sprinkles salt. \n
 They love you.
-You never discuss the tech stack, or your job role, but who cares?
+You never discuss the tech stack, or your job role, but who cares? \n
 You\'re offered the job on the spot!</string>
 
-    <string name="page4_win">The recruiter tells you that you\'re hired.
+    <string name="page4_win">The recruiter tells you that you\'re hired, %1$s!\n
 They tried to tell you a week ago, but apparently the email bounced back to them.</string>
 
-    <string name="page5_win">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client.
-They praise your work and hold you up as an example for new freelancers to follow.
-You get several inquiries from new clients, are able to raise your rates, and can finally afford to rent a WeWerk office space.</string>
+    <string name="page5_win">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client. \nThey praise your work on Twitter and hold you up as an example for new freelancers to follow. \nYou get several inquiries from new clients, raise your rates, and can finally afford to rent a WeWerk office space with a "%1$s, Developer" decal on the door.</string>
 
     <string name="win">You\'re hired!  You code happily ever after, and git commit off into the sunset.</string>
     <string name="story_image_content_description">Story Page Image</string>
     <string name="play_again_button_text">Play Again!</string>
+    <string name="junior_dev_story_title">Junior Dev Story</string>
 
 </resources>
