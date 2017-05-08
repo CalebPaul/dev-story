@@ -71,7 +71,6 @@ public class StoryActivity extends AppCompatActivity {
         } else {
             loadButtons(page);
         }
-
     }
 
     private void loadButtons(final Page page) {
