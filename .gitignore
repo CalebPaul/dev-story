@@ -9,3 +9,7 @@
 .externalNativeBuild
 
 config.codekit3
+
+*.keystore
+
+*.apk
