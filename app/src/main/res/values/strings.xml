@@ -18,7 +18,7 @@ Which option do you follow up with?</string>
 
 
     <string name="page2">You send out a few messages and manage not to sound too desperate.\n
-A  couple days later you hear you get some referrals.
+A  couple days later you get some opportunities referred to you.
 Which option do you follow up with?</string>
     <string name="page2_choice1">TeenyStartup.io</string>
     <string name="page2_choice2">A freelance project</string>
@@ -57,7 +57,8 @@ You never discuss the tech stack, or your job role, but who cares? \n
 You\'re offered the job on the spot!</string>
 
     <string name="page4_win">The recruiter tells you that you\'re hired, %1$s!\n
-They tried to tell you a week ago, but apparently the email bounced back to them.</string>
+They tried to tell you a week ago, but apparently the email bounced back to them. \n
+    They'd like you to start as soon as possible, and will have a MegaTech zip-up hoody waiting for you at your workstation.</string>
 
     <string name="page5_win">Turns out that founder of TeenyStartup.io, inc takes aquatic yoga classes from your client. \nThey praise your work on Twitter and hold you up as an example for new freelancers to follow. \nYou get several inquiries from new clients, raise your rates, and can finally afford to rent a WeWerk office space with a "%1$s, Developer" decal on the door.</string>
 
