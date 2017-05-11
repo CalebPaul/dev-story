@@ -10,6 +10,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.Stack;
 
 import calebpaul.jrdevstory.R;
@@ -27,6 +31,8 @@ public class StoryActivity extends AppCompatActivity {
     private Button choice1Button;
     private Button choice2Button;
     private Stack<Integer> pageStack = new Stack<>();
+    private InterstitialAd mInterstitialAd;
+    private Button endAdButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +44,19 @@ public class StoryActivity extends AppCompatActivity {
         choice1Button = (Button) findViewById(R.id.choice1Button);
         choice2Button = (Button) findViewById(R.id.choice2Button);
 
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-9718240825944429~4417692799");
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+                requestNewInterstitial();
+            }
+        });
+
+        requestNewInterstitial();
+
         Intent intent = getIntent();
         name = intent.getStringExtra("name");
         if (name == null || name.isEmpty()) {
@@ -46,6 +65,17 @@ public class StoryActivity extends AppCompatActivity {
 
         story = new Story();
         loadPage(0);
+
+//        Log.v(TAG, "Device ID:"+AdRequest.DEVICE_ID_EMULATOR);
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("B3EEABB8EE11C2BE770B684D95219ECB")
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
 
     private void loadPage(int pageNumber) {
