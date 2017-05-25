@@ -13,3 +13,5 @@ config.codekit3
 *.keystore
 
 *.apk
+
+.idea/misc.xml
