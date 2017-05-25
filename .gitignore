@@ -15,3 +15,5 @@ config.codekit3
 *.apk
 
 .idea/misc.xml
+
+app/src/main/java/calebpaul/jrdevstory/Constants.java
