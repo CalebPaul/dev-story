@@ -13,3 +13,7 @@ config.codekit3
 *.keystore
 
 *.apk
+
+.idea/misc.xml
+
+app/src/main/java/calebpaul/jrdevstory/Constants.java

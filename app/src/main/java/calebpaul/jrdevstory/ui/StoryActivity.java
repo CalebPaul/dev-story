@@ -10,8 +10,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.Stack;
 
+import calebpaul.jrdevstory.Constants;
 import calebpaul.jrdevstory.R;
 import calebpaul.jrdevstory.model.Page;
 import calebpaul.jrdevstory.model.Story;
@@ -27,6 +32,7 @@ public class StoryActivity extends AppCompatActivity {
     private Button choice1Button;
     private Button choice2Button;
     private Stack<Integer> pageStack = new Stack<>();
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +44,19 @@ public class StoryActivity extends AppCompatActivity {
         choice1Button = (Button) findViewById(R.id.choice1Button);
         choice2Button = (Button) findViewById(R.id.choice2Button);
 
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(Constants.AD_UNIT_ID);
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+                requestNewInterstitial();
+            }
+        });
+
+        requestNewInterstitial();
+
         Intent intent = getIntent();
         name = intent.getStringExtra("name");
         if (name == null || name.isEmpty()) {
@@ -46,6 +65,14 @@ public class StoryActivity extends AppCompatActivity {
 
         story = new Story();
         loadPage(0);
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(Constants.TEST_DEVICE_ID)
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
 
     private void loadPage(int pageNumber) {
@@ -60,12 +87,18 @@ public class StoryActivity extends AppCompatActivity {
         storyTextView.setText(pageText);
 
         if (page.isEndPage()) {
+            requestNewInterstitial();
             choice1Button.setVisibility(View.INVISIBLE);
             choice2Button.setText(R.string.play_again_button_text);
             choice2Button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    finish();
+                    if (mInterstitialAd.isLoaded()) {
+                        mInterstitialAd.show();
+                        finish();
+                    } else {
+                        finish();
+                    }
                 }
             });
         } else {

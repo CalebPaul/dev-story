@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.newrelic.agent.android.NewRelic;
+
+import calebpaul.jrdevstory.Constants;
 import calebpaul.jrdevstory.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 startStory(name);
             }
         });
+
+        NewRelic.withApplicationToken(
+                Constants.NEW_RELIC_TOKEN
+        ).start(this.getApplication());
     }
 
     @Override
