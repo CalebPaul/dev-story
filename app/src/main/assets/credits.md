@@ -1,9 +1,9 @@
 ### Jr Dev Story
-#### Credits
+#### Credits 
 
-Opening Image - by Luis Zuno aka ansimuz at [CubeBrush](https://cubebrush.co)   
+All art sourced from[Vecteezy,](https://www.vecteezy.com)artists listed below.  
 
-All other art sourced from[Vecteezy,](https://www.vecteezy.com)artists listed below.  
+Main Page Image - [freevector]  
 Resume Job Search Image - [momentbloom]  
 Social Network Image - [momentbloom]   
 Job Board Image - [momentbloom]   
@@ -16,7 +16,7 @@ Rejection Image - [nightwolfdezines]
 #### Talk nerdy to me
 
 Ok.  
-I built this app to get some real world experience with a clean Model-View-Presenter design pattern.  The structure is modelled after a course available on [TreeHouse](www.treehouse.com).  
+I built this app to get some real world experience with a clean Model-View-Presenter design pattern.  The structure is modeled after a course available on [TreeHouse](www.treehouse.com).  
 This is a native Android app written with Java, in Android Studio.
 #### Support and contact details
 

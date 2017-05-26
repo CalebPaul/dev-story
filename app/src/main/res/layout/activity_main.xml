@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="calebpaul.jrdevstory.ui.MainActivity">
 
-
     <ImageView
         android:contentDescription="@string/app_name"
         android:id="@+id/titleImageView"
@@ -20,7 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main"
+        app:srcCompat="@drawable/main_img"
         app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
@@ -41,8 +40,8 @@
 
     <EditText
         android:id="@+id/nameEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="358dp"
+        android:layout_height="36dp"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
@@ -58,21 +57,22 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleImageView"
-        app:layout_constraintVertical_bias="0.502" />
+        tools:layout_editor_absoluteY="350dp" />
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="serif-monospace"
         android:text="@string/junior_dev_story_title"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/titleImageView"
-        app:layout_constraintTop_toTopOf="@+id/titleImageView"
         app:layout_constraintRight_toRightOf="@+id/titleImageView"
-        android:layout_marginTop="8dp" />
+        app:layout_constraintTop_toTopOf="@+id/titleImageView"
+        app:layout_constraintHorizontal_bias="0.437" />
 
 </android.support.constraint.ConstraintLayout>
