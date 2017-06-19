@@ -13,6 +13,5 @@ public class AboutActivity extends AppCompatActivity {
         MarkdownView markdownView = new MarkdownView(this);
         setContentView(markdownView);
         markdownView.loadMarkdownFile("file:///android_asset/credits.md");
-//        markdownView.loadMarkdown("https://raw.githubusercontent.com/CalebPaul/graveyard-ninja/master/README.md");
     }
 }
