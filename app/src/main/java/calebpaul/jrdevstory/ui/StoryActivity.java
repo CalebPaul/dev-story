@@ -95,6 +95,14 @@ public class StoryActivity extends AppCompatActivity {
         storyTextView.setText(pageText);
 
         if (page.isEndPage()) {
+
+            //TODO - Fix comparative operator logic
+            if (pageText == ( "page3_win") || pageText == ( "page4_win" ) || pageText == ("page5_win" ) ) {
+                win.start();
+            } else {
+                lose.start();
+            }
+
             requestNewInterstitial();
             choice1Button.setVisibility(View.INVISIBLE);
             choice2Button.setText(R.string.play_again_button_text);
