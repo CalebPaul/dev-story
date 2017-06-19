@@ -2,6 +2,7 @@ package calebpaul.jrdevstory.ui;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,9 @@ public class StoryActivity extends AppCompatActivity {
     private Button choice2Button;
     private Stack<Integer> pageStack = new Stack<>();
     private InterstitialAd mInterstitialAd;
+    private MediaPlayer typing;
+    private MediaPlayer win;
+    private MediaPlayer lose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +47,10 @@ public class StoryActivity extends AppCompatActivity {
         storyTextView = (TextView) findViewById(R.id.storyTextView);
         choice1Button = (Button) findViewById(R.id.choice1Button);
         choice2Button = (Button) findViewById(R.id.choice2Button);
+
+        typing = MediaPlayer.create(this, R.raw.typing);
+        win = MediaPlayer.create(this, R.raw.win);
+        lose = MediaPlayer.create(this, R.raw.lose);
 
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(Constants.AD_UNIT_ID);
@@ -103,6 +111,7 @@ public class StoryActivity extends AppCompatActivity {
                 }
             });
         } else {
+            typing.start();
             loadButtons(page);
         }
     }
