@@ -90,6 +90,7 @@ public class StoryActivity extends AppCompatActivity {
             requestNewInterstitial();
             choice1Button.setVisibility(View.INVISIBLE);
             choice2Button.setText(R.string.play_again_button_text);
+            pageStack.clear();
             choice2Button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -127,13 +128,4 @@ public class StoryActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onBackPressed() {
-        pageStack.pop();
-        if (pageStack.isEmpty()) {
-            super.onBackPressed();
-        } else {
-            loadPage(pageStack.pop());
-        }
-    }
 }
