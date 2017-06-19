@@ -24,8 +24,11 @@
         <activity
             android:name=".ui.StoryActivity"
             android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"></activity>
+        <activity
+            android:name=".ui.AboutActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".ui.AboutActivity"></activity>
     </application>
 
 </manifest>
