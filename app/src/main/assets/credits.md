@@ -13,6 +13,8 @@ Freelance gig Image - [frankmib6]
 Multiple Faces Image - [nightcharges]   
 Rejection Image - [nightwolfdezines]
 
+All audio from [Freesound](https://www.freesound.org).
+
 #### Talk nerdy to me
 
 Ok.  
