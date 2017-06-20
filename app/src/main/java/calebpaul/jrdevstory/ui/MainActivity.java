@@ -1,6 +1,7 @@
 package calebpaul.jrdevstory.ui;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -20,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText nameField;
     private Button startButton;
+    private MediaPlayer start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        start = MediaPlayer.create(this, R.raw.start);
+        start.start();
 
         nameField = (EditText) findViewById(R.id.nameEditText);
         startButton = (Button) findViewById(R.id.startButton);
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        start.start();
         nameField.setText("");
     }
 
