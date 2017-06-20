@@ -96,8 +96,7 @@ public class StoryActivity extends AppCompatActivity {
 
         if (page.isEndPage()) {
 
-            //TODO - Fix comparative operator logic
-            if (pageText == ( "page3_win") || pageText == ( "page4_win" ) || pageText == ("page5_win" ) ) {
+            if (pageNumber == 9 || pageNumber == 10 || pageNumber == 11) {
                 win.start();
             } else {
                 lose.start();
